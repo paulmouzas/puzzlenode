@@ -150,17 +150,19 @@ def printNewBoard(highestWord, board):
         for col in range(len(board[row])):
                 
             output += str(board[row][col])
+            output += ' '
         output += '\n'
     return output
 def returnBoard(board, highestWord):
+    length = len(highestWord)
     for i in range(len(highestWord)):
-        board[whichRow][whichCol+i] = highestWord[i]
+        board[whichRow][whichCol+i+1] = highestWord[i]
     board = printNewBoard(highestWord, board)
     return board
 
 def returnFlipBoard(flipBoard, highestWord):
     for i in range(len(highestWord)):
-        flipBoard[whichRow][whichCol+i] = highestWord[i]
+        flipBoard[whichRow][whichCol+i+1] = highestWord[i]
     temp = unFlipBoard(flipBoard)
     board = printNewBoard(highestWord, temp)
     print board
@@ -170,4 +172,4 @@ else:
     ans = returnFlipBoard(flipBoard,highestWord)
 with open('output.txt', 'w')as f:
     f.write(ans)
-    
+print ans

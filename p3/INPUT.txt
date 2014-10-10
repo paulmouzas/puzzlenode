@@ -38,4 +38,8 @@ gesundheitswiederherstellungszusammenmischungsverhaeltniskundiger
 
 meervoerdigepersaansprakelijkheidsvernis
 vervoerdersaansprakelijkheidsverzekering
+<<<<<<< HEAD
 meervoudigepersoonlijkheidsstoornis
+=======
+meervoudigepersoonlijkheidsstoornis
+>>>>>>> e6a4ec4b168f809e7adeb1c37dc161d189b30d0d
